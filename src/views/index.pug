@@ -9,11 +9,11 @@ block content
         td Kaup
         td Sala
     tbody
-      for currency in currencies
+      each currency in currencies
         tr
-          td currency.name
-          td currency.bidValue
-          td currency.askValue
+          td= currency.shortName
+          td= currency.bidValue
+          td= currency.askValue
 
 
 
