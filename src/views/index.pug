@@ -2,30 +2,22 @@ extends layout
 
 block content
   h1= title
-  table
-    thead
-      tr
-        td Gjaldmiðill
-        td Kaup
-        td Sala
-    tbody
-      for currency in currencies
-        tr
-          td currency.name
-          td currency.bidValue
-          td currency.askValue
+  thead
+    tr
+      th='Gjaldmiðill'
+      th='Kaup'
+      th='Sala'
+  tbody(id='currency__container')
 
-
-
-  //- block content
-//-   h1=title
-//-   p welcomes! to #{title}
-//-   table
-//-     thead
-//-       tr
-//-         td nafn stöðvar
-//-       tbody
-//-         for channel in channels
-//-           tr
-//-             td
-//-               a(href='tv'+channel.name) #{channel.name}
+    block content
+      h1=title
+      p welcomes! to #{title}
+      table
+        thead
+          tr
+            td nafn stöðvar
+          tbody
+            for channel in channels
+              tr
+                td
+                  a(href='tv'+channel.name) #{channel.name}
