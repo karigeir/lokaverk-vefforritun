@@ -1,13 +1,17 @@
+$.(document).ready(function() {
+  init;
+})
+
 let init = () => {
-  getDataCurrency();
+  getDataCurrencyArion();
 }
 
 let getDataCurrencyArion = (source="Arion") => {
   $.get(`http://apis.is/currency/${source}`, (data) => {
-    let currency = data.results;
-    $('').html('');
-    data.map((currency)=> {
-      $('').append(`< tr><td>${flight.date}</td><td>${flight.flightNumber}</td><td>${flight.to}</td><td>${flight.plannedArrival}</td><td>${flight.realArrival}</td></tr>`)
+    let currencies = data.results;
+    $('#currency__container').html('');
+    currencies.map((currency)=> {
+      $('#currency__container').append(`< tr><td>${currency.shortName}</td><td>${currency.bidValue}</td><td>${currency.askValue}</td></tr>`)
     });
   });
 }
