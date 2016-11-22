@@ -2,15 +2,5 @@ extends layout
 
 block content
   h1= title
-  table
-    thead
-      tr
-        td Gjaldmiðill
-        td Kaup
-        td Sala
-    tbody
-      each currency in currencies
-        tr
-          td= currency.shortName
-          td= currency.bidValue
-          td= currency.askValue
+  a(href='/arion'): button Fébreytir Arion
+  a(href='/lb'): button Fébreytir Landsbankans
