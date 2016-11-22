@@ -3,11 +3,15 @@ const main  = require('./main.js')
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.render('index', {title: 'Fébreytar'});
+  });
+
 /* GET home page. */
 router.get('/:source', (req, res, next) => {
   main.currencies(req.params.source)
   .then((result) => {
-    res.render('index', { title: 'Gengi gjaldmiðla', currencies: result.data.results });
+    res.render('curr-table', { title: 'Fébreytirinn', currencies: result.data.results });
   })
   .catch((error) => {
     res.render('error', { title: 'Skellur!', error: 'Eitthvað fór úrskeiðis :(' });
