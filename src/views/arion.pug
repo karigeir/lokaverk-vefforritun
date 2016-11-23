@@ -17,4 +17,4 @@ block content
           td= currency.bidValue
           td= currency.askValue
           td= currency.changeCur
-          td: input(placeholder=currency.bidValue)
+          td: input(id=currency.shortName type='text' placeholder=currency.bidValue oninput=currency.shortName.toLowerCase() + 'func()')

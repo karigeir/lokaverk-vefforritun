@@ -1,6 +1,5 @@
 const express = require('express');
-const main  = require('./main.js')
-const exchange = require('./exchange.js')
+const main  = require('./curr.js');
 
 const router = express.Router();
 

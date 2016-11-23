@@ -16,11 +16,11 @@ block content
         td= '1'
         td= '1'
         td= '0'
-        td: input(placeholder='1')
+        td: input(id='ISK' type='text' placeholder='1' oninput='iskfunc()')
       each currency in currencies
         tr
           td= currency.shortName
           td= currency.bidValue
           td= currency.askValue
           td= currency.changeCur
-          td: input(placeholder=currency.bidValue)
+          td: input(id=currency.shortName type='text' placeholder=currency.bidValue oninput=currency.shortName.toLowerCase() + 'func()')
