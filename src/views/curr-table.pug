@@ -8,9 +8,13 @@ block content
         td Gjaldmiðill
         td Kaup
         td Sala
+        td Breyting
+        td Reiknir
     tbody
       each currency in currencies
         tr
           td= currency.shortName
           td= currency.bidValue
           td= currency.askValue
+          td= currency.changeCur
+          td: input(placeholder=currency.bidValue)
