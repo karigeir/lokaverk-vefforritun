@@ -2,9 +2,11 @@ extends layout
 
 block content
   h1= title
-  table
+  h5: a(href='/') Aftur á forsíðu
+  table(class='table-container')
     thead
       tr
+        td
         td Gjaldmiðill
         td Kaup
         td Sala
@@ -13,6 +15,7 @@ block content
     tbody
       each currency in currencies
         tr
+          td: img(src='/images/' + currency.shortName + '.png')
           td= currency.shortName
           td= currency.bidValue
           td= currency.askValue
