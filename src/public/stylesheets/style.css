@@ -1,13 +1,24 @@
+
+
 body {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   width: 100%;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #e6e6ff !important;
+  min-height: 100%;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #0f53c1 !important;
+  background: linear-gradient(to bottom, #0f53c1 0%, #0e31b1 100%);
 }
 
 a {
   color: #00B7FF;
+}
+
+.table-div {
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  width: 50%;
+  background-color: white;
 }
 
 .h1-class{
@@ -36,7 +47,7 @@ margin-right: 13%;
 
 table {
   margin: 0 auto;
-  width: 50%;
+  width: 95%;
   border-collapse: collapse;
 }
 
@@ -46,9 +57,11 @@ thead {
 
 tr {
   border-bottom: 1px solid #aaa;
+  height: 30px;
 }
 
 td {
+  width: 20%;
   border-left: 1px solid #aaa;
   border-right: 1px solid #aaa;
 }
