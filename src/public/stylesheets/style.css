@@ -1,13 +1,16 @@
-
+html{
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #0f53c1 0%, #0e31b1 100%);
+}
 
 body {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
-  width: 100%;
+  width: 70%;
   min-height: 100%;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #0f53c1 !important;
-  background: linear-gradient(to bottom, #0f53c1 0%, #0e31b1 100%);
+  background-color: #F0F0F0  !important;
+  border-style: inset;
 }
 
 a {
@@ -17,12 +20,14 @@ a {
 .table-div {
   margin: 0 auto;
   padding: 1rem 0 1rem 0;
-  width: 50%;
+  width: 95%;
   background-color: white;
 }
 
-.h1-class{
+h1{
   text-align: center;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .buttons-container{
@@ -52,7 +57,7 @@ table {
 }
 
 thead {
-  background-color:  #ddd;
+  background-color:  #F0F0F0 ;
 }
 
 tr {
@@ -75,5 +80,5 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: #F0F0F0 ;
 }
