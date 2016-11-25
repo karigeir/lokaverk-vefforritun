@@ -1,16 +1,20 @@
-html{
+html {
   margin-bottom: 0;
   background: linear-gradient(to bottom, #0f53c1 0%, #0e31b1 100%);
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-body {
+.index-body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conv-body {
   margin: 0 auto;
   text-align: center;
   width: 70%;
   min-height: 100%;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #F0F0F0  !important;
-  border-style: inset;
+  background-color: #F0F0F0;
 }
 
 a {
