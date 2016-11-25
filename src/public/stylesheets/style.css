@@ -2,15 +2,19 @@ html{
   margin-bottom: 0;
   background: linear-gradient(to bottom, #000066 0%, #00004d 100%);
   min-height: 100%;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-body {
+.index-body {
   margin: 0 auto;
+}
+.conv-body {
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
   text-align: center;
   width: 70%;
   min-height: 100%;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #F0F0F0  !important;
+  background-color: #F0F0F0;
 }
 
 a {
@@ -34,7 +38,7 @@ h1{
   width: 50%;
   display: flex;
   align-content: space-between;
-  margin: 50px auto;
+  margin: 3.125rem auto;
   }
 
 .button-arion{
