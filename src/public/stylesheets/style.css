@@ -25,11 +25,6 @@ a {
 margin-right: 13%;
 }
 
-.button-lb{
-  /*height: 256px;
-  width: 256px;*/
-}
-
 .fp-img{
   max-width: 100%;
   max-height: 100%;
@@ -39,6 +34,33 @@ margin-right: 13%;
   opacity: 0.7;
 }
 
-.table-container {
+table {
   margin: 0 auto;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color:  #ddd;
+}
+
+tr {
+  border-bottom: 1px solid #aaa;
+}
+
+td {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+.td-left {
+  border-left: none;
+}
+
+.td-right {
+  border-right: none;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
 }
