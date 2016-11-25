@@ -1,6 +1,6 @@
 html{
   margin-bottom: 0;
-  background: linear-gradient(to bottom, #0f53c1 0%, #0e31b1 100%);
+  background: linear-gradient(to bottom, #000066 0%, #00004d 100%);
 }
 
 body {
@@ -10,7 +10,6 @@ body {
   min-height: 100%;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #F0F0F0  !important;
-  border-style: inset;
 }
 
 a {
