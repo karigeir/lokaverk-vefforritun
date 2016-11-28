@@ -2,8 +2,8 @@ html {
   margin-bottom: 0;
   /*background: linear-gradient(to bottom, #000066 0%, #00004d 100%);*/
   background: #c0c0aa; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #c0c0aa , #1ce); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #c0c0aa , #1ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #96bda9 , #1ce); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #96bda9 , #1ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
   font: 16px "Libre Franklin", sans-serif;
 }
@@ -19,8 +19,7 @@ a {
 
 .index-title {
   color: #F0F0F0;
-  font: 5rem "Josefin Slab", serif;
-  font-weight: bold;
+  font: 4rem "Century Gothic", sans-serif;
 }
 
 .conv-body {
@@ -85,14 +84,14 @@ header {
 h1{
   text-align: center;
   margin: 0;
-  padding-top: 3rem;
+  padding-top: 7rem;
 }
 
 .buttons-container{
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
-  margin: 5.125rem auto;
+  margin: 1.125rem auto;
   }
 
 .button-arion{
@@ -102,7 +101,6 @@ margin-right: 19%;
 .fp-img{
   max-width: 100%;
   max-height: 100%;
-  filter: grayscale(20%)
 }
 
 .fp-img:hover{
