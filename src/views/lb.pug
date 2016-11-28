@@ -4,7 +4,7 @@ block content
   body(class='conv-body')
     header
       div(class='logo-title')
-        img(class='logo' src='../images/lblogo-roundedcorners.png')
+        img(class='logo' src='../images/lblogo-roundedcorners.png' alt='lb-logo-color')
         h1(class='conv-title')= title
       h5(class='conv-back'): a(class='conv-back-link' href='/') Aftur á forsíðu
     div(class='table-cont')
@@ -20,7 +20,7 @@ block content
           tbody
             tr
               td(class='td-left')
-                img(src='/images/ISK.png')
+                img(src='/images/ISK.png' alt='ISK-flag')
                 = ' ISK'
               td= '1'
               td= '1'
@@ -29,7 +29,7 @@ block content
             each currency in currencies
               tr
                 td(class='td-left')
-                  img(src='/images/' + currency.shortName + '.png')
+                  img(src='/images/' + currency.shortName + '.png' alt=currency.shortName + '-flag')
                   = ' ' + currency.shortName
                 td= currency.bidValue
                 td= currency.askValue

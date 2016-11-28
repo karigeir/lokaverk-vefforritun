@@ -12,6 +12,4 @@ function currencies(source) {
   return promise.get(`/currency/${source}`);
 }
 
-module.exports = {
-  currencies,
-}
+module.exports = currencies;
