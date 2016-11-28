@@ -5,20 +5,43 @@ html{
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: #00B7FF;
+}
+
 .index-body {
   margin: 0 auto;
 }
 .conv-body {
   margin: 0 auto;
   padding-bottom: 1.5rem;
-  text-align: center;
-  width: 70%;
+  width: 100%;
   min-height: 100%;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   background-color: #F0F0F0;
 }
 
-a {
-  color: #00B7FF;
+.conv-title {
+  padding-left: 13.5rem;
+}
+
+.conv-back {
+  margin: 0;
+  padding: 1rem 2rem 0rem 1rem;
+  border-left: 1px solid #aaa;
+}
+
+.table-cont {
+  margin: 1.5rem auto;
+  width: 70%;
+  text-align: center;
+  padding: 1.5rem 0 1.5rem 0;
+  background-color: #F0F0F0;
 }
 
 .table-div {
