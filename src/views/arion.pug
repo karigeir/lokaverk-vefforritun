@@ -2,24 +2,28 @@ extends layout
 
 block content
   body(class='conv-body')
-    h1= title
-    h5: a(href='/') Aftur á forsíðu
-    div(class='table-div')
-      table
-        thead
-          tr
-            td(class='td-left') Gjaldmiðill
-            td Kaup
-            td Sala
-            td Breyting
-            td(class='td-right') Reiknir
-        tbody
-          each currency in currencies
+    header
+      div(class='logo-title')
+        img(class='logo' src='../images/arionlogo-roundedcorners.png')
+        h1(class='conv-title')= title
+      h5(class='conv-back'): a(class='conv-back-link' href='/') Aftur á forsíðu
+    div(class='table-cont')
+      div(class='table-div')
+        table
+          thead
             tr
-              td(class='td-left')
-                img(src='/images/' + currency.shortName + '.png')
-                = ' ' + currency.shortName
-              td= currency.bidValue
-              td= currency.askValue
-              td= currency.changeCur
-              td(class='td-right'): input(id=currency.shortName type='text' placeholder=currency.bidValue onFocus='this.select()' onInput=currency.shortName.toLowerCase() + 'func()')
+              td(class='td-left') Gjaldmiðill
+              td Kaup
+              td Sala
+              td Breyting
+              td(class='td-right') Reiknir
+          tbody
+            each currency in currencies
+              tr
+                td(class='td-left')
+                  img(src='/images/' + currency.shortName + '.png')
+                  = ' ' + currency.shortName
+                td= currency.bidValue
+                td= currency.askValue
+                td= currency.changeCur
+                td(class='td-right'): input(id=currency.shortName type='text' placeholder=currency.bidValue onFocus='this.select()' onInput=currency.shortName.toLowerCase() + 'func()')

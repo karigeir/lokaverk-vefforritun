@@ -3,8 +3,10 @@ extends layout
 block content
   body(class='conv-body')
     header
-      h1(class='conv-title')= title
-      h5(class='conv-back'): a(href='/') Aftur á forsíðu
+      div(class='logo-title')
+        img(class='logo' src='../images/lblogo-roundedcorners.png')
+        h1(class='conv-title')= title
+      h5(class='conv-back'): a(class='conv-back-link' href='/') Aftur á forsíðu
     div(class='table-cont')
       div(class='table-div')
         table
