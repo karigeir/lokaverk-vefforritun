@@ -1,4 +1,4 @@
-html{
+html {
   margin-bottom: 0;
   /*background: linear-gradient(to bottom, #000066 0%, #00004d 100%);*/
   background: #000066;
@@ -15,6 +15,11 @@ a {
 .index-body {
   margin: 0 auto;
 }
+
+.index-title {
+  color: #F0F0F0;
+}
+
 .conv-body {
   margin: 0 auto;
   padding-bottom: 1.5rem;
