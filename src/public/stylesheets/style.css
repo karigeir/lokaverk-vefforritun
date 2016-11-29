@@ -26,6 +26,14 @@ header {
   font: 4rem "Century Gothic", "Muli", sans-serif;
 }
 
+.index-subtitle {
+  text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+  color: #fff;
+  font: 2rem "Century Gothic", "Muli", sans-serif;
+}
+
 .buttons-container {
   width: 40%;
   min-width: 378px;
