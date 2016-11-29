@@ -1,5 +1,5 @@
 const express = require('express');
-const main = require('./curr.js');
+const curr = require('./curr.js');
 
 const router = express.Router();
 
@@ -15,7 +15,7 @@ router.get('/m5', (req, res) => {
 
 /* GET arion page */
 router.get('/arion', (req, res) => {
-  main.currencies('arion')
+  curr.currencies('arion')
   .then((result) => {
     res.render('arion', { title: 'Gengi Gjaldmiðla', currencies: result.data.results });
   })
@@ -26,7 +26,7 @@ router.get('/arion', (req, res) => {
 
 /* GET lb page */
 router.get('/lb', (req, res) => {
-  main.currencies('lb')
+  curr.currencies('lb')
   .then((result) => {
     res.render('lb', { title: 'Gengi Gjaldmiðla', currencies: result.data.results });
   })
