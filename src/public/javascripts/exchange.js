@@ -46,7 +46,6 @@ function init() {
   cny = document.getElementById('CNY');
   gvt = document.getElementById('GVT');
 }
-
 /* eslint-enable no-undef */
 
 /*
