@@ -17,7 +17,7 @@ router.get('/m5', (req, res) => {
 router.get('/arion', (req, res) => {
   curr.currencies('arion')
   .then((result) => {
-    res.render('arion', { title: 'Gengi Gjaldmiðla', currencies: result.data.results });
+    res.render('arion', { title: 'Gengi gjaldmiðla', currencies: result.data.results });
   })
   .catch((error) => {
     res.render('error', { title: 'Skellur!', message: 'Eitthvað fór úrskeiðis :(', error });
@@ -28,7 +28,7 @@ router.get('/arion', (req, res) => {
 router.get('/lb', (req, res) => {
   curr.currencies('lb')
   .then((result) => {
-    res.render('lb', { title: 'Gengi Gjaldmiðla', currencies: result.data.results });
+    res.render('lb', { title: 'Gengi gjaldmiðla', currencies: result.data.results });
   })
   .catch((error) => {
     res.render('error', { title: 'Skellur!', message: 'Eitthvað fór úrskeiðis :(', error });
