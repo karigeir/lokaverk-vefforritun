@@ -1,18 +1,30 @@
 /*
- * Keyra init þegar síðan er tilbúin
- */
-document.addEventListener('DOMContentLoaded', function(){
-  init();
-});
-
-/*
  * Skilgreina breytur
  */
-let isk, usd, gbp, eur, cad, dkk, nok, sek, chf, jpy, xdr, aud, zar, hkd, nzd, pln, sgd, cny, gvt;
+let isk;
+let usd;
+let gbp;
+let eur;
+let cad;
+let dkk;
+let nok;
+let sek;
+let chf;
+let jpy;
+let xdr;
+let aud;
+let zar;
+let hkd;
+let nzd;
+let pln;
+let sgd;
+let cny;
+let gvt;
 
 /*
  * Frumstillir breytur sem input glugga
  */
+/* eslint-disable no-undef */
 function init() {
   isk = document.getElementById('ISK');
   usd = document.getElementById('USD');
@@ -35,12 +47,14 @@ function init() {
   gvt = document.getElementById('GVT');
 }
 
+/* eslint-enable no-undef */
+
 /*
  * Fall sem setur tölurnar sem koma úr reikningnum á formið '1.234,56'
  */
 function formatNum(input) {
   input += '';
-  let x = input.split('.');
+  const x = input.split('.');
   let x1 = x[0];
   let x2 = x.length > 1 ? '.' + x[1] : '';
   const regex = /(\d+)(\d{3})/;
@@ -54,6 +68,7 @@ function formatNum(input) {
 /*
  * Föll sem reikna út gengi gjaldmiðla út frá innslætti tölu í input glugga
  */
+/* eslint-disable no-unused-vars */
 function iskfunc() {
   usd.value = formatNum((isk.value / usd.placeholder).toFixed(2));
   gbp.value = formatNum((isk.value / gbp.placeholder).toFixed(2));
@@ -452,3 +467,13 @@ function gvtfunc() {
   sgd.value = formatNum(((gvt.value * gvt.placeholder) / sgd.placeholder).toFixed(2));
   cny.value = formatNum(((gvt.value * gvt.placeholder) / cny.placeholder).toFixed(2));
 }
+/* eslint-enable no-unused-vars */
+
+/*
+ * Keyra init þegar síðan er tilbúin
+ */
+/* eslint-disable no-undef */
+document.addEventListener('DOMContentLoaded', () => {
+  init();
+});
+/* eslint-enable no-undef */

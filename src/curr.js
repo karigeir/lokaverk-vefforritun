@@ -14,4 +14,4 @@ function currencies(source) {
 
 module.exports = {
   currencies,
-}
+};
