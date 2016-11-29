@@ -1,7 +1,7 @@
 const express = require('express');
 const curr = require('./curr.js');
 
-const router = express.Router();
+const router = express.Router(); // eslint-disable-line new-cap
 
 /* GET home page. */
 router.get('/', (req, res) => {
