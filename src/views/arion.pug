@@ -13,9 +13,9 @@ block content
           thead
             tr
               td(class='td-left-header') Gjaldmiðill
-              td Kaup
-              td Sala
-              td Breyting
+              td(class='td-mid-left') Kaup
+              td(class='td-mid') Sala
+              td(class='td-mid-right') Breyting
               td(class='td-right') Reiknir
           tbody
             each currency in currencies
@@ -23,7 +23,7 @@ block content
                 td(class='td-left')
                   img(src='/images/' + currency.shortName + '.png' alt=currency.shortName + '-flag')
                   = ' ' + currency.shortName
-                td= currency.bidValue
-                td= currency.askValue
-                td= currency.changeCur
+                td(class='td-mid-left')= currency.bidValue
+                td(class='td-mid')= currency.askValue
+                td(class='td-mid-right')= currency.changeCur
                 td(class='td-right'): input(id=currency.shortName type='text' placeholder=currency.bidValue onFocus='this.select()' onInput=currency.shortName.toLowerCase() + 'func()')

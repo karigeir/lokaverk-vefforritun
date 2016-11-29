@@ -28,6 +28,7 @@ header {
 
 .buttons-container {
   width: 40%;
+  min-width: 378px;
   display: flex;
   justify-content: space-around;
   margin: 4.125rem auto;
@@ -41,6 +42,8 @@ header {
 .fp-img:hover {
   opacity: 0.7;
 }
+
+
 
 .conv-body {
   margin: 0 auto;
@@ -86,15 +89,33 @@ header {
   background-color: #D0D0D0;
 }
 
+/* Media queries fyrir headerinn */
+@media only screen and (max-width: 700px) {
+
+  .logo {
+    padding-left: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+
+  .conv-title {
+    display: none;
+  }
+}
+
 .table-cont {
+  display: flex;
   margin: 1.5rem auto;
   width: 70%;
+  min-width: 378px;
   text-align: center;
   padding: 1.5rem 0 1.5rem 0;
   background-color: #F0F0F0;
 }
 
 .table-div {
+  display: flex;
   margin: 0 auto;
   padding: 1rem 0 1rem 0;
   width: 95%;
@@ -134,13 +155,28 @@ td {
   padding-left: 3.35rem;
 }
 
-
 .td-right {
   border-right: none;
 }
 
 tr:nth-child(even) {
   background-color: #F0F0F0 ;
+}
+
+/* media queries fyrir töfluna */
+@media only screen and (max-width: 700px) {
+
+  .td-mid-right {
+    display: none;
+  }
+
+  .td-left-header {
+    padding-left: 0.7rem;
+  }
+
+  .td-left {
+    padding-left:1.35rem;
+  }
 }
 
 .err-body {
@@ -152,5 +188,5 @@ tr:nth-child(even) {
 .err-title {
   padding-top: 7rem;
   color: #fff;
-  font: 4rem "Century Gothic", sans-serif;
+  font: 4rem "Century Gothic", "Muli", sans-serif;
 }
